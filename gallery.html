@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معرض الصور - قسم معلم الحاسب الآلي</title>
+    
+    <!-- Bootstrap 5 RTL CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Google Fonts - Arabic -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-cpu-fill me-2"></i>
+                قسم معلم الحاسب الآلي
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="curriculum.html">المناهج الدراسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="gallery.html">معرض الصور</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">اتصل بنا</a>
+                    </li>
+                </ul>
+                
+                <div class="d-flex">
+                    <button class="btn btn-outline-light me-2" id="themeToggle">
+                        <i class="bi bi-moon-fill" id="themeIcon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="page-title">معرض الصور</h1>
+                    <p class="page-subtitle">لمحات من الحياة الأكاديمية والفعاليات في قسم معلم الحاسب الآلي</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Filters -->
+    <section class="gallery-filters py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="filter-buttons">
+                        <button class="btn btn-outline-primary active" data-filter="all">الكل</button>
+                        <button class="btn btn-outline-primary" data-filter="classes">القاعات الدراسية</button>
+                        <button class="btn btn-outline-primary" data-filter="labs">المختبرات</button>
+                        <button class="btn btn-outline-primary" data-filter="events">الفعاليات</button>
+                        <button class="btn btn-outline-primary" data-filter="projects">المشاريع</button>
+                        <button class="btn btn-outline-primary" data-filter="graduation">التخرج</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Content -->
+    <section class="gallery-content section-padding">
+        <div class="container">
+            <div class="row gallery-grid" id="galleryGrid">
+                <!-- Classes -->
+                <div class="col-lg-4 col-md-6 mb-4 gallery-item" data-category="classes">
+                    <div class="gallery-card">
+                        <img src="https://images.pexels.com/photos/1181534/pexels-photo-1181534.jpeg?auto=compress&cs=tinysrgb&w=600" alt="قاعة دراسية" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h5>قاعة المحاضرات الذكية</h5>
+                                <p>قاعة مجهزة بأحدث وسائل التعليم التفاعلي</p>
+                            </div>
+                            <div class="gallery-actions">
+                                <button class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="https://images.pexels.com/photos/1181534/pexels-photo-1181534.jpeg?auto=compress&cs=tinysrgb&w=600">
+                                    <i class="bi bi-zoom-in"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4 gallery-item" data-category="classes">
+                    <div class="gallery-card">
+                        <img src="https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=600" alt="محاضرة تفاعلية" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h5>محاضرة تفاعلية</h5>
+                                <p>الطلاب يتفاعلون مع المحاضر أثناء الدرس</p>
+                            </div>
+                            <div class="gallery-actions">
+                                <button class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=600">
+                                    <i class="bi bi-zoom-in"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Labs -->
+                <div class="col-lg-4 col-md-6 mb-4 gallery-item" data-category="labs">
+                    <div class="gallery-card">
+                        <img src="https://images.pexels.com/photos/3862627/pexels-photo-3862627.jpeg?auto=compress&cs=tinysrgb&w=600" alt="مختبر الحاسوب" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h5>مختبر الحاسوب المتقدم</h5>
+                                <p>مختبر مجهز بأحدث أجهزة الحاسوب</p>
+                            </div>
+                            <div class="gallery-actions">
+                                <button class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="https://images.pexels.com/photos/3862627/pexels-photo-3862627.jpeg?auto=compress&cs=tinysrgb&w=600">
+                                    <i class="bi bi-zoom-in"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4 gallery-item" data-category="labs">
+                    <div class="gallery-card">
+                        <img src="https://images.pexels.com/photos/3862379/pexels-photo-3862379.jpeg?auto=compress&cs=tinysrgb&w=600" alt="طلاب في المختبر" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h5>التطبيق العملي</h5>
+                                <p>الطلاب يطبقون ما تعلموه نظرياً</p>
+                            </div>
+                            <div class="gallery-actions">
+                                <button class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="https://images.pexels.com/photos/3862379/pexels-photo-3862379.jpeg?auto=compress&cs=tinysrgb&w=600">
+                                    <i class="bi bi-zoom-in"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4 gallery-item" data-category="labs">
+                    <div class="gallery-card">
+                        <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600" alt="مختبر البرمجة" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h5>مختبر البرمجة</h5>
+                                <p>مساحة مخصصة لتعلم البرمجة</p>
+                            </div>
+                            <div class="gallery-actions">
+                                <button class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600">
+                                    <i class="bi bi-zoom-in"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Events -->
+                <div class="col-lg-4 col-md-6 mb-4 gallery-item" data-category="events">
+                    <div class="gallery-card">
+                        <img src="https://images.pexels.com/photos/2608517/pexels-photo-2608517.jpeg?auto=compress&cs=tinysrgb&w=600" alt="ورشة عمل" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h5>ورشة عمل تقنية</h5>
+                                <p>ورشة عمل حول أحدث التقنيات</p>
+                            </div>
+                            <div class="gallery-actions">
+                                <button class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="https://images.pexels.com/photos/2608517/pexels-photo-2608517.jpeg?auto=compress&cs=tinysrgb&w=600">
+                                    <i class="bi bi-zoom-in"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4 gallery-item" data-category="events">
+                    <div class="gallery-card">
+                        <img src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=600" alt="مؤتمر علمي" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h5>المؤتمر العلمي السنوي</h5>
+                                <p>مؤتمر علمي بمشاركة خبراء التكنولوجيا</p>
+                            </div>
+                            <div class="gallery-actions">
+                                <button class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=600">
+                                    <i class="bi bi-zoom-in"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projects -->
+                <div class="col-lg-4 col-md-6 mb-4 gallery-item" data-category="projects">
+                    <div class="gallery-card">
+                        <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=600" alt="عرض مشروع" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h5>عرض مشاريع الطلاب</h5>
+                                <p>الطلاب يعرضون مشاريعهم المبتكرة</p>
+                            </div>
+                            <div class="gallery-actions">
+                                <button class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=600">
+                                    <i class="bi bi-zoom-in"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4 gallery-item" data-category="projects">
+                    <div class="gallery-card">
+                        <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600" alt="مشروع تطبيق" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h5>مشروع تطبيق محمول</h5>
+                                <p>طالب يعرض تطبيقه المحمول</p>
+                            </div>
+                            <div class="gallery-actions">
+                                <button class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600">
+                                    <i class="bi bi-zoom-in"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Graduation -->
+                <div class="col-lg-4 col-md-6 mb-4 gallery-item" data-category="graduation">
+                    <div class="gallery-card">
+                        <img src="https://images.pexels.com/photos/1205651/pexels-photo-1205651.jpeg?auto=compress&cs=tinysrgb&w=600" alt="حفل التخرج" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h5>حفل التخرج</h5>
+                                <p>الخريجون يحتفلون بإنجازهم</p>
+                            </div>
+                            <div class="gallery-actions">
+                                <button class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="https://images.pexels.com/photos/1205651/pexels-photo-1205651.jpeg?auto=compress&cs=tinysrgb&w=600">
+                                    <i class="bi bi-zoom-in"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4 gallery-item" data-category="graduation">
+                    <div class="gallery-card">
+                        <img src="https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&cs=tinysrgb&w=600" alt="طلاب متخرجون" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h5>الدفعة الأولى</h5>
+                                <p>أول دفعة خريجين من القسم</p>
+                            </div>
+                            <div class="gallery-actions">
+                                <button class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&cs=tinysrgb&w=600">
+                                    <i class="bi bi-zoom-in"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <img src="" alt="" class="img-fluid w-100" id="modalImage">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="footer-title">قسم معلم الحاسب الآلي</h5>
+                    <p>كلية التربية النوعية - جامعة دمياط</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5 class="footer-title">روابط سريعة</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="curriculum.html">المناهج الدراسية</a></li>
+                        <li><a href="gallery.html">معرض الصور</a></li>
+                        <li><a href="index.html#contact">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5 class="footer-title">معلومات الاتصال</h5>
+                    <div class="footer-contact">
+                        <p><i class="bi bi-geo-alt-fill me-2"></i>دمياط، مصر</p>
+                        <p><i class="bi bi-telephone-fill me-2"></i>+20 57 2403510</p>
+                        <p><i class="bi bi-envelope-fill me-2"></i>computer.edu@du.edu.eg</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="footer-copyright">
+                        &copy; 2025 قسم معلم الحاسب الآلي - جامعة دمياط. جميع الحقوق محفوظة.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+</html>

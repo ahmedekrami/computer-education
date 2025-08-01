@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قسم معلم الحاسب الآلي - كلية التربية النوعية - جامعة دمياط</title>
+    
+    <!-- Bootstrap 5 RTL CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Google Fonts - Arabic -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                <i class="bi bi-cpu-fill me-2"></i>
+                قسم معلم الحاسب الآلي
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">عن القسم</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">مميزات القسم</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#careers">المسارات المهنية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="curriculum.html">المناهج الدراسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faculty">أعضاء هيئة التدريس</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">معرض الصور</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">اتصل بنا</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay">
+            <div class="container">
+                <div class="row align-items-center min-vh-100">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h1 class="hero-title mb-4">قسم معلم الحاسب الآلي</h1>
+                        <h2 class="hero-subtitle mb-4">كلية التربية النوعية – جامعة دمياط</h2>
+                        <p class="hero-slogan mb-5">ابدأ رحلتك في تعليم الحاسب بخطة دراسية حديثة بنظام الساعات المعتمدة</p>
+                        
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary btn-lg me-3" data-bs-toggle="modal" data-bs-target="#applyModal">
+                                <i class="bi bi-person-plus me-2"></i>
+                                التقديم الآن
+                            </button>
+                            <a href="curriculum.html" class="btn btn-outline-light btn-lg">
+                                <i class="bi bi-book me-2"></i>
+                                استكشف المناهج
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section py-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="stat-item">
+                        <i class="bi bi-people-fill stat-icon"></i>
+                        <h3 class="stat-number" data-target="250">0</h3>
+                        <p class="stat-label">طالب وطالبة</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="stat-item">
+                        <i class="bi bi-book-fill stat-icon"></i>
+                        <h3 class="stat-number" data-target="48">0</h3>
+                        <p class="stat-label">مقرر دراسي</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="stat-item">
+                        <i class="bi bi-person-badge-fill stat-icon"></i>
+                        <h3 class="stat-number" data-target="15">0</h3>
+                        <p class="stat-label">عضو هيئة تدريس</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="stat-item">
+                        <i class="bi bi-trophy-fill stat-icon"></i>
+                        <h3 class="stat-number" data-target="4">0</h3>
+                        <p class="stat-label">سنوات دراسية</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title mb-5">عن القسم</h2>
+                    <div class="about-content">
+                        <p class="lead">
+                            قسم معلم الحاسب الآلي هو قسم جديد وديناميكي في كلية التربية النوعية - جامعة دمياط. 
+                            يجمع القسم بين علوم الحاسب الآلي والمهارات التعليمية والكفاءة في اللغة الإنجليزية 
+                            لإعداد خريجين مؤهلين تأهيلاً عالياً قادرين على العمل في مجالات متعددة.
+                        </p>
+                        <div class="about-highlights mt-5">
+                            <div class="row">
+                                <div class="col-md-4 mb-3">
+                                    <div class="highlight-item">
+                                        <i class="bi bi-laptop highlight-icon"></i>
+                                        <h5>التكنولوجيا الحديثة</h5>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="highlight-item">
+                                        <i class="bi bi-mortarboard highlight-icon"></i>
+                                        <h5>التعليم المتطور</h5>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="highlight-item">
+                                        <i class="bi bi-globe highlight-icon"></i>
+                                        <h5>المهارات العالمية</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="section-title">مميزات القسم</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon">
+                            <i class="bi bi-journal-text"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>التركيز النظري</h4>
+                            <p>محاضرات تعليمية وأكاديمية متخصصة تغطي جميع جوانب علوم الحاسب والتربية</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon">
+                            <i class="bi bi-code-slash"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>التركيز العملي</h4>
+                            <p>تطبيق عملي على الأجهزة والبرمجة ومشاريع الواقع العملي</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Paths Section -->
+    <section id="careers" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="section-title">المسارات المهنية</h2>
+                    <p class="section-subtitle">الفرص الوظيفية المتاحة بعد التخرج</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="career-card">
+                        <div class="career-icon">
+                            <i class="bi bi-person-workspace"></i>
+                        </div>
+                        <h5>معلم الحاسب الآلي</h5>
+                        <p>التدريس في المدارس الحكومية والخاصة</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="career-card">
+                        <div class="career-icon">
+                            <i class="bi bi-code-square"></i>
+                        </div>
+                        <h5>مطور البرمجيات</h5>
+                        <p>تطوير التطبيقات والبرامج</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="career-card">
+                        <div class="career-icon">
+                            <i class="bi bi-mortarboard"></i>
+                        </div>
+                        <h5>أستاذ جامعي</h5>
+                        <p>مع الدراسات العليا</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="career-card">
+                        <div class="career-icon">
+                            <i class="bi bi-person-check"></i>
+                        </div>
+                        <h5>مدرب التكنولوجيا</h5>
+                        <p>في مراكز التعليم والتدريب</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="career-card">
+                        <div class="career-icon">
+                            <i class="bi bi-briefcase"></i>
+                        </div>
+                        <h5>أدوار تقنية</h5>
+                        <p>في الشركات الخاصة</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="career-card">
+                        <div class="career-icon">
+                            <i class="bi bi-graph-up"></i>
+                        </div>
+                        <h5>التسويق التقني</h5>
+                        <p>في القطاع الخاص</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Faculty Section -->
+    <section id="faculty" class="section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="section-title">أعضاء هيئة التدريس</h2>
+                    <p class="section-subtitle">نخبة من الأساتذة المتميزين</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="faculty-card">
+                        <div class="faculty-image">
+                            <img src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Dr. Dalia Khairy Hebishy" class="img-fluid">
+                        </div>
+                        <div class="faculty-info">
+                            <h5>د. داليا خيري حبيشي</h5>
+                            <p class="faculty-title">أستاذ مساعد</p>
+                            <p class="faculty-specialty">البرمجة وعلوم الحاسب</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="faculty-card">
+                        <div class="faculty-image">
+                            <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Prof. Rania El-Tantawy" class="img-fluid">
+                        </div>
+                        <div class="faculty-info">
+                            <h5>أ.د. رانيا الطنطاوي</h5>
+                            <p class="faculty-title">أستاذ</p>
+                            <p class="faculty-specialty">الرياضيات التطبيقية</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="faculty-card">
+                        <div class="faculty-image">
+                            <img src="https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Dr. Najlaa Khafajy" class="img-fluid">
+                        </div>
+                        <div class="faculty-info">
+                            <h5>د. نجلاء خفاجي</h5>
+                            <p class="faculty-title">أستاذ مساعد</p>
+                            <p class="faculty-specialty">المناهج وطرق التدريس</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="faculty-card">
+                        <div class="faculty-image">
+                            <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Prof. Dr. Elsaeed Abd Elrazek" class="img-fluid">
+                        </div>
+                        <div class="faculty-info">
+                            <h5>أ.د. السعيد عبد الرازق</h5>
+                            <p class="faculty-title">أستاذ</p>
+                            <p class="faculty-specialty">الإحصاء والأساليب الكمية</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="faculty-card">
+                        <div class="faculty-image">
+                            <img src="https://images.pexels.com/photos/3184317/pexels-photo-3184317.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Dr. Ahmed Hassan" class="img-fluid">
+                        </div>
+                        <div class="faculty-info">
+                            <h5>د. أحمد حسن</h5>
+                            <p class="faculty-title">مدرس</p>
+                            <p class="faculty-specialty">شبكات الحاسب</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="faculty-card">
+                        <div class="faculty-image">
+                            <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Dr. Sarah Mohamed" class="img-fluid">
+                        </div>
+                        <div class="faculty-info">
+                            <h5>د. سارة محمد</h5>
+                            <p class="faculty-title">مدرس</p>
+                            <p class="faculty-specialty">قواعد البيانات</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="section-title">اتصل بنا</h2>
+                    <p class="section-subtitle">نحن هنا للإجابة على جميع استفساراتك</p>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-4 d-flex justify-content-center">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="bi bi-geo-alt-fill"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h6>العنوان</h6>
+                                <p>كلية التربية النوعية<br>جامعة دمياط، دمياط، مصر</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="bi bi-telephone-fill"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h6>الهاتف</h6>
+                                <p>+20 57 2403510</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="bi bi-envelope-fill"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h6>البريد الإلكتروني</h6>
+                                <p>computer.edu@du.edu.eg</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="footer-title">قسم معلم الحاسب الآلي</h5>
+                    <p>كلية التربية النوعية - جامعة دمياط</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5 class="footer-title">روابط سريعة</h5>
+                    <ul class="footer-links">
+                        <li><a href="#home">الرئيسية</a></li>
+                        <li><a href="#about">عن القسم</a></li>
+                        <li><a href="curriculum.html">المناهج الدراسية</a></li>
+                        <li><a href="#faculty">أعضاء هيئة التدريس</a></li>
+                        <li><a href="#contact">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5 class="footer-title">معلومات الاتصال</h5>
+                    <div class="footer-contact">
+                        <p><i class="bi bi-geo-alt-fill me-2"></i>دمياط، مصر</p>
+                        <p><i class="bi bi-telephone-fill me-2"></i>+20 57 2403510</p>
+                        <p><i class="bi bi-envelope-fill me-2"></i>computer.edu@du.edu.eg</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="footer-copyright">
+                        &copy; 2025 قسم معلم الحاسب الآلي - جامعة دمياط. جميع الحقوق محفوظة.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Apply Modal -->
+    <div class="modal fade" id="applyModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">التقديم للقسم</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="applyForm">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="studentName" class="form-label">الاسم الكامل</label>
+                                <input type="text" class="form-control" id="studentName" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="studentEmail" class="form-label">البريد الإلكتروني</label>
+                                <input type="email" class="form-control" id="studentEmail" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="studentPhone" class="form-label">رقم الهاتف</label>
+                                <input type="tel" class="form-control" id="studentPhone" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="highSchoolGrade" class="form-label">درجة الثانوية العامة</label>
+                                <input type="number" class="form-control" id="highSchoolGrade" min="0" max="100" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="motivation" class="form-label">لماذا تريد دراسة معلم الحاسب الآلي؟</label>
+                            <textarea class="form-control" id="motivation" rows="4" required></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إلغاء</button>
+                    <button type="submit" form="applyForm" class="btn btn-primary">تقديم الطلب</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
